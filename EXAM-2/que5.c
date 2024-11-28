@@ -2,15 +2,29 @@
 #include<conio.h>
 void main ()
 {
-	//pattern
-	int i,j;
+	//wap to find max in 1d array
+	int n,i;
+	printf("Enter the size of an Array: ");
+	scanf("%d",&n);
 	
-	for(i=5; i>=1; i--)
+	int a[n];
+	for(i=0; i<n; i++)
 	{
-		for(j=5; j>=i; j--)
+		printf("Enter a[%d]: ",i);
+		scanf("%d",&a[i]);
+	}
+	
+	for(i=0; i<n; i++)
+	{
+		printf("%d ",a[i]);
+	}
+	
+	int max=0;
+	for(i=0; i<n; i++)
+	{
+		if(max>n)
 		{
-			printf("%d ",j);
+			printf("%d is maximum.",max);
 		}
-		printf("\n");
 	}
 }
