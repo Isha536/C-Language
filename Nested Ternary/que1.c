@@ -1,24 +1,25 @@
 #include<stdio.h>
-#include<conio.h>
 
 void main ()
 {
-	int a,b,c;
+   int a,b,c,d;
 	
-	printf("ENTER THE VALUE OF a:");
-	scanf("%d",&a);
-	printf("ENTER THE VALUE OF b:");
-	scanf("%d",&b);
-	printf("ENTER THE VALUE OF c:");
-	scanf("%d",&c);
+	printf("ENTER THE VALUE OF a,b,c and d: ");
+	scanf("%d%d%d%d",&a,&b,&c,&d);
 	
-	(a>b)?
-	    (a>c)?
-	      printf("a IS MAXIMUM")
-	     :printf("c IS MAXIMUM")
-	    :
-	    (b>c)?
-	     printf("b IS MAXIMUM")
-	    :printf("c IS MAXIMUM");
-	    	
+	(a<b)?
+	(a<c)?
+	(a<d)?
+	    printf("a is minimum"):
+	  printf("d is minimum"):
+	(c<d)?
+	    printf("c is minimum"):
+		printf("d is minimum"):
+	(b<c)?
+	(b<d)?
+	    printf("b is minimum"):
+		printf("d is minimum"):
+    (c<d)?
+        printf("c is minimum"):
+        printf("d is minimum");
 }
