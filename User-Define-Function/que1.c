@@ -1,18 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
-{
-	//wap to print multiplication table of number using FOR loop.
-	table();
-}
-void table()
-{
-	int n,i;
-	printf("Enter n: ");
-	scanf("%d",&n);
-	
-	for(i=1; i<=10; i++)
+	void main()
 	{
-		printf("%d x %d= %d\n",n,i,n*i);
+		//wap to print multiplication table of number using FOR loop.
+		table(8);
 	}
-}
+	void table(int n)
+	{
+		int i;
+		
+		for(i=1; i<=10; i++)
+		{
+			printf("%d x %d= %d\n",n,i,n*i);
+		}
+	}

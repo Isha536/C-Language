@@ -2,15 +2,12 @@
 #include<conio.h>
 void main()
 {
-	//wap to print multiplication table of number using FOR loop.
-	table(5);
+	//wap to find the cube of num given by the user.
+	cube(8);
 }
-void table(int n)
+void cube(int n)
 {
-	int i;
-	
-	for(i=1; i<=10; i++)
-	{
-		printf("%d x %d= %d\n",n,i,n*i);
-	}
+	int cube;
+	cube= n*n*n;
+	printf("Cube= %d",cube);
 }

@@ -2,15 +2,13 @@
 #include<conio.h>
 void main()
 {
-	//wap to find the cube of num given by the user.
-	cube();
+	//wap to convert feet given by user in inches.
+	feet(1);
 }
-void cube()
+void feet(int n)
 {
-	int n,cube;
+	int inch;
 
-	printf("Enter a number: ");
-	scanf("%d",&n);
-	cube= n*n*n;
-	printf("Cube= %d",cube);
+	inch = n*12;
+	printf("inch= %d",inch);
 }
